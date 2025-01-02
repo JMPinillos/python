@@ -1,0 +1,44 @@
+1
+00:00:00,567 --> 00:00:04,667
+O scikit-learn facilita
+o agrupamento MMG,
+
+2
+00:00:04,700 --> 00:00:07,333
+assim como os outros métodos
+de agrupamento.
+
+3
+00:00:07,367 --> 00:00:10,900
+Temos que importar
+a biblioteca mistura
+
+4
+00:00:10,933 --> 00:00:14,167
+do scikit-learn
+e a mistura gaussiana.
+
+5
+00:00:14,200 --> 00:00:17,233
+Demos o número de componentes,
+de agrupamentos
+
+6
+00:00:17,267 --> 00:00:18,700
+que queremos.
+
+7
+00:00:18,733 --> 00:00:21,500
+Demos o conjunto de dados.
+O fit é executado.
+
+8
+00:00:21,533 --> 00:00:24,900
+Assim podemos prever e ter
+os rótulos de todos os pontos,
+
+9
+00:00:24,933 --> 00:00:27,433
+todas as amostras
+do conjunto de dados.
+

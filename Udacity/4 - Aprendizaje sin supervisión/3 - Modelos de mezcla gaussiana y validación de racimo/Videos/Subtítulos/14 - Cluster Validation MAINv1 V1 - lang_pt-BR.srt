@@ -1,0 +1,150 @@
+1
+00:00:00,300 --> 00:00:03,567
+A validação de agrupamento
+é o procedimento de avaliar
+
+2
+00:00:03,600 --> 00:00:05,367
+os resultados
+de um agrupamento
+
+3
+00:00:05,400 --> 00:00:07,967
+de maneira objetiva
+e quantitativa.
+
+4
+00:00:08,000 --> 00:00:11,633
+Existem três categorias de índices
+de validação de agrupamento.
+
+5
+00:00:11,667 --> 00:00:14,367
+A primeira
+são os índices externos.
+
+6
+00:00:14,400 --> 00:00:19,567
+Usamos esse método de avaliação
+se os dados estiverem rotulados.
+
+7
+00:00:19,600 --> 00:00:22,500
+Se o conjunto de dados
+estiver rotulado,
+
+8
+00:00:22,533 --> 00:00:25,333
+podemos usar os índices externos
+para avaliar
+
+9
+00:00:25,367 --> 00:00:27,633
+o desempenho
+do método de agrupamento.
+
+10
+00:00:27,667 --> 00:00:30,133
+Mas, quase sempre,
+os dados que temos
+
+11
+00:00:30,167 --> 00:00:31,733
+não estão rotulados,
+
+12
+00:00:31,767 --> 00:00:34,467
+principalmente no aprendizado
+não supervisionado.
+
+13
+00:00:34,500 --> 00:00:38,233
+Nesse caso,
+os índices internos são úteis.
+
+14
+00:00:38,267 --> 00:00:41,467
+Eles medem o ajuste
+entre os dados e a estrutura,
+
+15
+00:00:41,500 --> 00:00:43,333
+usando apenas os dados.
+
+16
+00:00:43,367 --> 00:00:46,400
+A terceira categoria
+é dos índices relativos,
+
+17
+00:00:46,433 --> 00:00:49,533
+que indicam qual estrutura
+de agrupamento
+
+18
+00:00:49,567 --> 00:00:51,633
+é melhor em algum sentido.
+
+19
+00:00:51,667 --> 00:00:55,733
+Todos os índices internos
+funcionam como relativos.
+
+20
+00:00:56,033 --> 00:00:59,133
+Muitos índices de validação
+são definidos
+
+21
+00:00:59,167 --> 00:01:02,000
+pela compactação
+e a separabilidade.
+
+22
+00:01:02,033 --> 00:01:05,067
+A compactação é a medida
+da proximidade
+
+23
+00:01:05,100 --> 00:01:07,933
+dos elementos
+do agrupamento.
+
+24
+00:01:07,967 --> 00:01:11,067
+A separabilidade
+é a distância e a distinção
+
+25
+00:01:11,100 --> 00:01:13,333
+entre os agrupamentos.
+
+26
+00:01:13,367 --> 00:01:16,600
+A dedução geral
+é que os métodos de agrupamento
+
+27
+00:01:16,633 --> 00:01:19,033
+devem produzir agrupamentos,
+
+28
+00:01:19,067 --> 00:01:22,733
+nos quais os elementos
+sejam os mais parecidos
+
+29
+00:01:22,767 --> 00:01:25,767
+e os agrupamentos
+sejam os mais distintos.
+
+30
+00:01:26,167 --> 00:01:29,233
+Se parecer teórico demais,
+não se preocupe.
+
+31
+00:01:29,267 --> 00:01:32,867
+Vamos ver índices específicos
+nos próximos vídeos.
+
