@@ -1,0 +1,108 @@
+1
+00:00:00,000 --> 00:00:03,060
+Now we're dealing with multiple layers and
+
+2
+00:00:03,060 --> 00:00:05,740
+we'd still like to train the network with gradient descent.
+
+3
+00:00:05,740 --> 00:00:09,105
+For before we know how to calculate the error in the output node.
+
+4
+00:00:09,105 --> 00:00:13,410
+We can use this error with gradient descent to train the hidden to output weights,
+
+5
+00:00:13,410 --> 00:00:15,825
+but to train the input to hidden weights,
+
+6
+00:00:15,825 --> 00:00:19,215
+we need to know the error caused by the units in the hidden layer.
+
+7
+00:00:19,215 --> 00:00:22,675
+How do we find these errors to use in a gradient descent step?
+
+8
+00:00:22,675 --> 00:00:25,530
+Before, we found the errors by taking the derivative of
+
+9
+00:00:25,530 --> 00:00:29,700
+the squared errors with respect to the weights between the input and output layers.
+
+10
+00:00:29,700 --> 00:00:32,385
+If we do that with a hidden layer using the chain rule,
+
+11
+00:00:32,385 --> 00:00:35,820
+we find the error for units there is proportional to the error in
+
+12
+00:00:35,820 --> 00:00:40,330
+the output layer times the weight between the units, and this makes sense.
+
+13
+00:00:40,330 --> 00:00:43,100
+A unit with a stronger connection to the output node is going
+
+14
+00:00:43,100 --> 00:00:45,905
+to contribute more error to the final output.
+
+15
+00:00:45,905 --> 00:00:48,380
+Here you see the error times the weights.
+
+16
+00:00:48,380 --> 00:00:51,410
+This is the same way you propagate inputs through the network.
+
+17
+00:00:51,410 --> 00:00:54,160
+The inputs times the weights between the layers.
+
+18
+00:00:54,160 --> 00:00:56,435
+Instead of propagating the inputs forward,
+
+19
+00:00:56,435 --> 00:00:59,825
+you're propagating the error backwards through the network.
+
+20
+00:00:59,825 --> 00:01:02,660
+Now, you can view this process as flipping
+
+21
+00:01:02,660 --> 00:01:06,040
+the network over and using the error as the input.
+
+22
+00:01:06,040 --> 00:01:08,715
+This method is called backpropagation.
+
+23
+00:01:08,715 --> 00:01:11,345
+This process works the same when you add more layers,
+
+24
+00:01:11,345 --> 00:01:14,270
+you just keep propagating the errors through the layers.
+
+25
+00:01:14,270 --> 00:01:17,560
+Backpropagation is fundamental to how neural networks learn,
+
+26
+00:01:17,560 --> 00:01:19,655
+so it's really important to understand this
+
+27
+00:01:19,655 --> 00:01:22,710
+if you're going to be building deep learning models.
+

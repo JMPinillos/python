@@ -1,0 +1,256 @@
+1
+00:00:00,000 --> 00:00:04,170
+We'll be doing the entire project in a single notebook.
+
+2
+00:00:04,170 --> 00:00:06,540
+Let's look at the overall process.
+
+3
+00:00:06,540 --> 00:00:08,490
+First, we'll be using
+
+4
+00:00:08,490 --> 00:00:13,125
+torchvision.transforms and data loaders to prepare and explore our data.
+
+5
+00:00:13,125 --> 00:00:17,970
+Next, we'll use the PyTorch functions that you learn during the course,
+
+6
+00:00:17,970 --> 00:00:23,530
+along with a loss function and an optimizer to build and train our neural network.
+
+7
+00:00:23,530 --> 00:00:25,880
+Then on the test set,
+
+8
+00:00:25,880 --> 00:00:29,005
+we will test our neural network's performance.
+
+9
+00:00:29,005 --> 00:00:34,480
+Then we'll compare that performance with the performance reported by detect or corpse,
+
+10
+00:00:34,480 --> 00:00:36,930
+and based on these results,
+
+11
+00:00:36,930 --> 00:00:41,885
+we'll make a recommendation on whether it is better to build or buy a solution.
+
+12
+00:00:41,885 --> 00:00:44,720
+Now, let's walk through the notebook so you can
+
+13
+00:00:44,720 --> 00:00:48,130
+see what this looks like on a more concrete level.
+
+14
+00:00:48,130 --> 00:00:50,115
+At the top of the notebook,
+
+15
+00:00:50,115 --> 00:00:54,755
+well have some benchmark results on CIFAR-10 that you can feel free to explore,
+
+16
+00:00:54,755 --> 00:00:57,835
+and we'll include your imports for you.
+
+17
+00:00:57,835 --> 00:01:00,465
+Next, you'll load your data.
+
+18
+00:01:00,465 --> 00:01:05,795
+You'll put your code where it says your code here throughout the notebook.
+
+19
+00:01:05,795 --> 00:01:08,390
+Then you need to create your transforms,
+
+20
+00:01:08,390 --> 00:01:15,505
+a dataset and a data loader using torch.vision datasets and torch.utils.data.
+
+21
+00:01:15,505 --> 00:01:20,920
+The data loader is what will actually feed images to your neural network.
+
+22
+00:01:20,920 --> 00:01:23,690
+Next, you'll need to explore
+
+23
+00:01:23,690 --> 00:01:27,560
+the dataset so that you can get a sense of what the images look like.
+
+24
+00:01:27,560 --> 00:01:29,840
+You should check the size of the images,
+
+25
+00:01:29,840 --> 00:01:31,745
+how many color channels are in it,
+
+26
+00:01:31,745 --> 00:01:35,915
+and how many images are in both the training and the test set.
+
+27
+00:01:35,915 --> 00:01:37,370
+To view the images,
+
+28
+00:01:37,370 --> 00:01:41,599
+we've provided a pre-written helper function called show 5,
+
+29
+00:01:41,599 --> 00:01:46,090
+which will show you five arbitrary images from the data loader.
+
+30
+00:01:46,090 --> 00:01:49,850
+Once you have an idea of the size and shape of your data,
+
+31
+00:01:49,850 --> 00:01:53,105
+you move on to building your neural network.
+
+32
+00:01:53,105 --> 00:01:56,630
+The size and shape of your data will tell you what your input size
+
+33
+00:01:56,630 --> 00:02:00,580
+is so that you can specify the right dimensions at each layer.
+
+34
+00:02:00,580 --> 00:02:02,600
+Once you've built your neural network,
+
+35
+00:02:02,600 --> 00:02:04,970
+you'll need to specify a loss function and
+
+36
+00:02:04,970 --> 00:02:08,900
+optimizer so that the accuracy of your neural network improves,
+
+37
+00:02:08,900 --> 00:02:12,155
+rather than just being a function of random weights.
+
+38
+00:02:12,155 --> 00:02:16,795
+You'll train your neural network and record your loss at each epoch.
+
+39
+00:02:16,795 --> 00:02:21,140
+It's important to record your loss so that you can verify your network is
+
+40
+00:02:21,140 --> 00:02:25,850
+actually learning and the error rate is going down as the network trains.
+
+41
+00:02:25,850 --> 00:02:27,665
+If your loss starts increasing,
+
+42
+00:02:27,665 --> 00:02:30,020
+you may be overfeeding your dataset.
+
+43
+00:02:30,020 --> 00:02:32,765
+To see this change in loss visually,
+
+44
+00:02:32,765 --> 00:02:36,785
+you'll want to plot your training loss using Matplotlib.
+
+45
+00:02:36,785 --> 00:02:39,635
+You'll finally go ahead and test your model
+
+46
+00:02:39,635 --> 00:02:42,605
+on that test set that you specified at the top.
+
+47
+00:02:42,605 --> 00:02:45,710
+Testing your model will allow you to verify that
+
+48
+00:02:45,710 --> 00:02:48,920
+your network can classify images it hasn't seen yet.
+
+49
+00:02:48,920 --> 00:02:52,205
+Ultimately, this is how we're going to be able to compare
+
+50
+00:02:52,205 --> 00:02:56,060
+our network to detect or corpse model accuracy.
+
+51
+00:02:56,060 --> 00:02:58,775
+Once you have your evaluation accuracy,
+
+52
+00:02:58,775 --> 00:03:00,680
+you'll want to save your model using
+
+53
+00:03:00,680 --> 00:03:05,660
+torch.save so that it can be loaded and reused again in the future.
+
+54
+00:03:05,660 --> 00:03:08,645
+Finally, at the bottom of the notebook,
+
+55
+00:03:08,645 --> 00:03:12,680
+you'll want to double-click that last cell to write up why
+
+56
+00:03:12,680 --> 00:03:16,820
+you made the architectural decisions that you made and what
+
+57
+00:03:16,820 --> 00:03:21,200
+your recommendation is of whether to build or buy based on
+
+58
+00:03:21,200 --> 00:03:26,360
+what you know about CIFAR-10 and your model's test set accuracy.
+
+59
+00:03:26,360 --> 00:03:28,460
+When you're finished with this project,
+
+60
+00:03:28,460 --> 00:03:31,789
+you will have built a real-world object detection algorithm
+
+61
+00:03:31,789 --> 00:03:35,005
+and compare its accuracy with an industry benchmark.
+
+62
+00:03:35,005 --> 00:03:38,105
+Although the scenario in this project is fictional,
+
+63
+00:03:38,105 --> 00:03:41,180
+it's not unlike the types of problems you might be asked to
+
+64
+00:03:41,180 --> 00:03:45,960
+solve as a real machine-learning engineer working in the field.
+

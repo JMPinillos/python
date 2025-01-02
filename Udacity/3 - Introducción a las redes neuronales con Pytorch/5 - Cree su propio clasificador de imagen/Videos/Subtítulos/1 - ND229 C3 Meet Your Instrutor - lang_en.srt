@@ -1,0 +1,28 @@
+1
+00:00:00,000 --> 00:00:03,210
+Hi everyone, my name is Eric Lincoln.
+
+2
+00:00:03,210 --> 00:00:06,060
+I'm an artificial intelligence researcher working at
+
+3
+00:00:06,060 --> 00:00:09,180
+the intersection of machine learning and cybersecurity.
+
+4
+00:00:09,180 --> 00:00:13,380
+I'm so excited to be with you for your deep learning object detection project.
+
+5
+00:00:13,380 --> 00:00:18,795
+The techniques used in object detection are critical for many different parts of AI.
+
+6
+00:00:18,795 --> 00:00:21,600
+From self-driving cars and computer vision,
+
+7
+00:00:21,600 --> 00:00:24,315
+all the way to my own research in malware detection.
+
