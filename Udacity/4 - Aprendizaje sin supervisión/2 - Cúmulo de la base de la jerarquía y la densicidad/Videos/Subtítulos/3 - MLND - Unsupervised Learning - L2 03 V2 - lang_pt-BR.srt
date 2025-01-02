@@ -1,0 +1,369 @@
+1
+00:00:00,334 --> 00:00:03,834
+Luis nos mostrou um exemplo
+de agrupamento hierárquico,
+
+2
+00:00:03,868 --> 00:00:07,067
+no qual uma pizzaria
+queria agrupar as localizações
+
+3
+00:00:07,100 --> 00:00:08,501
+dos seus clientes
+
+4
+00:00:08,534 --> 00:00:12,167
+para determinar
+onde abrir suas filiais.
+
+5
+00:00:12,200 --> 00:00:14,367
+É um exemplo de um método
+chamado
+
+6
+00:00:14,400 --> 00:00:16,434
+de agrupamento
+de ligação simples.
+
+7
+00:00:16,467 --> 00:00:18,467
+Vamos analisar
+mais de perto.
+
+8
+00:00:18,501 --> 00:00:21,634
+Este conjunto de dados
+tem dois recursos
+
+9
+00:00:21,667 --> 00:00:23,200
+que definimos.
+
+10
+00:00:23,234 --> 00:00:26,701
+Queremos usar o agrupamento
+de ligação simples.
+
+11
+00:00:26,734 --> 00:00:30,000
+O primeiro passo é deduzir
+que cada ponto
+
+12
+00:00:30,033 --> 00:00:32,133
+já é um agrupamento.
+
+13
+00:00:32,167 --> 00:00:35,767
+Vamos numerar cada um
+para podermos falar deles.
+
+14
+00:00:35,801 --> 00:00:39,501
+O próximo passo é calcular
+a distância entre cada ponto
+
+15
+00:00:39,534 --> 00:00:41,167
+e outros pontos.
+
+16
+00:00:41,200 --> 00:00:45,000
+Vamos escolher
+a distância mais curta
+
+17
+00:00:45,033 --> 00:00:46,534
+entre dois agrupamentos
+
+18
+00:00:46,567 --> 00:00:50,133
+e agrupamos esses pontos
+assim.
+
+19
+00:00:50,167 --> 00:00:53,367
+Aqui do lado,
+vamos adicionar o agrupamento
+
+20
+00:00:53,400 --> 00:00:54,901
+com este formato,
+
+21
+00:00:54,934 --> 00:00:58,734
+com essa espécie de parênteses
+que conecta os dois pontos.
+
+22
+00:00:58,767 --> 00:01:02,634
+Depois podemos encontrar
+os agrupamentos mais próximos,
+
+23
+00:01:02,667 --> 00:01:05,133
+que são estes dois.
+
+24
+00:01:05,167 --> 00:01:07,734
+Colocamos aqui do lado.
+
+25
+00:01:07,767 --> 00:01:10,734
+Este seria
+o terceiro agrupamento,
+
+26
+00:01:10,767 --> 00:01:14,067
+que também fica
+aqui do lado.
+
+27
+00:01:14,100 --> 00:01:16,400
+O problema
+é um pouco diferente agora.
+
+28
+00:01:16,434 --> 00:01:18,434
+Veja só este exemplo.
+
+29
+00:01:18,467 --> 00:01:21,133
+Qual é a distância
+entre o agrupamento laranja
+
+30
+00:01:21,167 --> 00:01:22,667
+e o ponto nº 7?
+
+31
+00:01:22,701 --> 00:01:25,033
+É a distância entre 7 e 6?
+
+32
+00:01:25,067 --> 00:01:27,267
+É a distância entre 7 e 8?
+
+33
+00:01:27,300 --> 00:01:31,100
+É a média das distâncias
+ou outra coisa?
+
+34
+00:01:31,133 --> 00:01:35,934
+É uma das coisas que separa
+os vários tipos
+
+35
+00:01:35,968 --> 00:01:38,567
+de métodos de agrupamento
+hierárquico.
+
+36
+00:01:38,601 --> 00:01:40,033
+Vamos ver alguns.
+
+37
+00:01:40,067 --> 00:01:44,000
+A ligação simples procura o ponto
+mais próximo do agrupamento,
+
+38
+00:01:44,033 --> 00:01:46,601
+então a distância
+entre os dois agrupamentos
+
+39
+00:01:46,634 --> 00:01:50,767
+é a distância entre 7 e 6,
+que é a mais próxima.
+
+40
+00:01:50,801 --> 00:01:55,534
+Esta distância é a mais próxima
+em relação a outras distâncias
+
+41
+00:01:55,567 --> 00:01:57,167
+entre os agrupamentos.
+
+42
+00:01:57,200 --> 00:02:00,567
+Então o 7 vai entrar
+neste agrupamento.
+
+43
+00:02:00,601 --> 00:02:05,667
+O novo agrupamento
+tem um agrupamento filho.
+
+44
+00:02:05,701 --> 00:02:09,968
+Isto é refletido aqui,
+no gráfico.
+
+45
+00:02:10,000 --> 00:02:15,100
+Dá para começar a entender
+como nossa árvore vai crescer.
+
+46
+00:02:15,133 --> 00:02:17,968
+Se continuarmos
+somando os agrupamentos,
+
+47
+00:02:18,000 --> 00:02:22,868
+vamos ter uma árvore
+que abrange os pontos dos dados.
+
+48
+00:02:22,901 --> 00:02:25,167
+Isto se chama dendrograma.
+
+49
+00:02:25,200 --> 00:02:27,400
+Onde estão os agrupamentos?
+
+50
+00:02:27,434 --> 00:02:31,167
+Precisamos dizer
+quantos agrupamentos queremos.
+
+51
+00:02:31,200 --> 00:02:34,367
+Se quisermos
+dois agrupamentos...
+
+52
+00:02:34,400 --> 00:02:35,968
+Depois de criar a árvore,
+
+53
+00:02:36,000 --> 00:02:39,834
+podemos ver onde há
+apenas duas ligações.
+
+54
+00:02:39,868 --> 00:02:41,934
+Então cortamos a árvore
+nesta altura.
+
+55
+00:02:41,968 --> 00:02:45,501
+Assim teríamos esta árvore
+como um agrupamento
+
+56
+00:02:45,534 --> 00:02:48,334
+e isto seria
+outro agrupamento.
+
+57
+00:02:48,367 --> 00:02:52,567
+Se quisermos três agrupamentos,
+podemos cortar a árvore aqui.
+
+58
+00:02:52,601 --> 00:02:55,267
+Estes pontos formam
+um agrupamento,
+
+59
+00:02:55,300 --> 00:02:58,200
+estes formam o 2º agrupamento
+e estes formam o terceiro.
+
+60
+00:02:58,234 --> 00:03:03,300
+Cada altura resulta num número
+diferente de agrupamentos.
+
+61
+00:03:03,334 --> 00:03:06,367
+O agrupamento de ligação simples
+ou hierárquico, no geral,
+
+62
+00:03:06,400 --> 00:03:09,567
+pode nos dar um agrupamento
+
+63
+00:03:09,601 --> 00:03:13,801
+ou o número de amostras,
+de pontos em agrupamentos,
+
+64
+00:03:13,834 --> 00:03:15,667
+e tudo no meio.
+
+65
+00:03:15,701 --> 00:03:19,234
+A medida da distância
+entre os agrupamentos
+
+66
+00:03:19,267 --> 00:03:23,868
+é o que separa os métodos
+de agrupamento hierárquico.
+
+67
+00:03:23,901 --> 00:03:26,601
+A ligação simples analisa
+os pontos mais próximos
+
+68
+00:03:26,634 --> 00:03:31,167
+entre dois agrupamentos
+e os compara.
+
+69
+00:03:31,200 --> 00:03:34,601
+Entre as distâncias
+dos agrupamentos,
+
+70
+00:03:34,634 --> 00:03:36,767
+esta é a mais curta.
+
+71
+00:03:36,801 --> 00:03:40,901
+Este são os dois agrupamentos
+que vamos unir.
+
+72
+00:03:40,934 --> 00:03:45,033
+Mas isso leva a ligação simples
+a produzir
+
+73
+00:03:45,067 --> 00:03:47,467
+agrupamentos alongados.
+
+74
+00:03:47,501 --> 00:03:52,467
+Em muitos casos,
+queremos agrupamentos compactos.
+
+75
+00:03:52,501 --> 00:03:56,934
+Às vezes a ligação simples
+produz um agrupamento
+
+76
+00:03:56,968 --> 00:04:01,367
+que agrupa a maior parte
+do conjunto de dados.
+
+77
+00:04:01,801 --> 00:04:05,868
+É por isso que analisamos
+outros agrupamentos hierárquicos.
+
+78
+00:04:05,901 --> 00:04:09,868
+Mas, antes disso,
+vamos comparar ao k-means.
+
