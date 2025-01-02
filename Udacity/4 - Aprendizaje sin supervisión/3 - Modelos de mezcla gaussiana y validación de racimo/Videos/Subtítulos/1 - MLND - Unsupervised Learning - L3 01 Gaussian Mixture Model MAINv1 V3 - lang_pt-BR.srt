@@ -1,0 +1,146 @@
+1
+00:00:00,361 --> 00:00:04,243
+Nesta aula, vamos ver
+mais um algoritmo de agrupamento
+
+2
+00:00:04,277 --> 00:00:07,124
+chamado "Agrupamento Modelo
+de Mistura de Gaussianas".
+
+3
+00:00:07,158 --> 00:00:11,000
+Este é um algoritmo
+de agrupamento leve,
+
+4
+00:00:11,034 --> 00:00:14,020
+o que significa que cada ponto,
+cada amostra no nosso conjunto,
+
+5
+00:00:14,054 --> 00:00:16,707
+vai pertencer a todo
+agrupamento que tivermos,
+
+6
+00:00:16,741 --> 00:00:19,323
+mas teremos diferentes níveis
+de pertencimento
+
+7
+00:00:19,357 --> 00:00:20,835
+em cada agrupamento.
+
+8
+00:00:20,869 --> 00:00:24,692
+O que o Agrupamento Modelo
+de Mistura de Gaussianas faz
+
+9
+00:00:24,726 --> 00:00:29,507
+é olhar para os pontos que temos,
+como este exemplo em uma dimensão,
+
+10
+00:00:29,541 --> 00:00:35,140
+e dizer que esse conjunto de pontos
+parece ter sido gerado
+
+11
+00:00:35,174 --> 00:00:38,675
+por uma distribuição de Gauss
+que se parece com isto.
+
+12
+00:00:38,709 --> 00:00:41,204
+Então, vou atribuir o maior
+nível de pertencimento
+
+13
+00:00:41,238 --> 00:00:43,563
+neste agrupamento.
+
+14
+00:00:43,963 --> 00:00:47,827
+Estes parecem ter sido gerados
+por uma distribuição de Gauss
+
+15
+00:00:47,861 --> 00:00:49,300
+que tem esta aparência.
+
+16
+00:00:49,334 --> 00:00:51,511
+Então vamos atribuir o maior
+nível de pertencimento
+
+17
+00:00:51,544 --> 00:00:52,644
+neste agrupamento.
+
+18
+00:00:52,678 --> 00:00:55,538
+Isso também funciona
+em duas dimensões.
+
+19
+00:00:55,572 --> 00:00:59,627
+Vamos falar o que a distribuição
+de Gauss significa
+
+20
+00:00:59,661 --> 00:01:02,124
+em duas ou também
+em mais dimensões.
+
+21
+00:01:02,158 --> 00:01:04,491
+E esse algoritmo de agrupamento
+funciona muito bem
+
+22
+00:01:04,525 --> 00:01:06,908
+neste conjunto de dados
+que já vimos antes.
+
+23
+00:01:06,942 --> 00:01:09,316
+Então, examinamos o processo
+de análise de agrupamento.
+
+24
+00:01:09,350 --> 00:01:12,755
+Escolher o algoritmo
+de agrupamento é só um passo.
+
+25
+00:01:13,000 --> 00:01:16,427
+Temos um certo número de passos
+para transformar os nossos dados
+
+26
+00:01:16,461 --> 00:01:19,731
+em conhecimento.
+Vamos falar como isso funciona.
+
+27
+00:01:20,228 --> 00:01:24,091
+E vamos terminar a aula falando
+sobre validação de agrupamento,
+
+28
+00:01:24,125 --> 00:01:28,971
+que é como pontuar um agrupamento
+depois de executá-lo,
+
+29
+00:01:29,005 --> 00:01:32,387
+e como comparamos diferentes
+algoritmos de agrupamento
+
+30
+00:01:32,421 --> 00:01:34,795
+e os resultados disso
+em diferentes conjuntos de dados.
+
