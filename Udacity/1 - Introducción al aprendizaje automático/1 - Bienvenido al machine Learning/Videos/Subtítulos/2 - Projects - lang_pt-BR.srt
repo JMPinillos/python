@@ -1,0 +1,25 @@
+1
+00:00:00,000 --> 00:00:03,203
+Na Udacity, acreditamos
+que é melhor aprender na prática.
+
+2
+00:00:03,237 --> 00:00:06,206
+Criamos nosso programa
+baseado em aplicar o aprendizado.
+
+3
+00:00:06,240 --> 00:00:10,143
+Há laboratórios ao longo dos cursos
+para ajudá-lo a praticar o conteúdo,
+
+4
+00:00:10,177 --> 00:00:13,180
+e você terá projetos incríveis
+para adicionar ao seu portfólio.
+
+5
+00:00:13,213 --> 00:00:16,316
+Veja as notas a seguir
+para um resumo do que vai construir.
+

@@ -1,0 +1,217 @@
+1
+00:00:01,134 --> 00:00:03,203
+Então, estou aqui
+com o Timo, da Arvato,
+
+2
+00:00:03,237 --> 00:00:06,707
+e estamos nos juntando
+para realizar um projeto.
+
+3
+00:00:07,107 --> 00:00:09,025
+O projeto de aprendizagem
+não supervisionada
+
+4
+00:00:09,058 --> 00:00:13,947
+que trabalhamos
+durante as últimas aulas
+
+5
+00:00:13,981 --> 00:00:21,688
+é direcionado a estratégias
+para agrupar dados de várias formas.
+
+6
+00:00:21,755 --> 00:00:23,423
+Os dados da Arvato
+que estamos usando...
+
+7
+00:00:23,457 --> 00:00:26,126
+Pode falar um pouco
+sobre para que são usados
+
+8
+00:00:26,159 --> 00:00:29,997
+e quais as características dos dados
+que você acha mais importantes
+
+9
+00:00:30,030 --> 00:00:32,900
+para os objetivos que tem
+para a empresa?
+
+10
+00:00:32,966 --> 00:00:37,971
+Posso, sim.
+Você tem um conjunto de dados
+
+11
+00:00:38,005 --> 00:00:41,141
+que é a base proprietária
+da Bertelsmann Arvato.
+
+12
+00:00:41,775 --> 00:00:44,678
+Inclui a informação
+demográfica,
+
+13
+00:00:44,711 --> 00:00:48,482
+uns 100 atributos
+das pessoas da Alemanha.
+
+14
+00:00:48,515 --> 00:00:53,720
+Tiramos esses dados de várias
+fontes públicas na Alemanha.
+
+15
+00:00:53,754 --> 00:00:58,992
+Também fornecemos o segundo
+conjunto de dados que inclui
+
+16
+00:00:59,025 --> 00:01:01,361
+atributos
+de informação demográfica
+
+17
+00:01:01,395 --> 00:01:04,364
+dos consumidores
+de um dos nossos clientes.
+
+18
+00:01:04,565 --> 00:01:06,767
+O que estamos pedindo
+nesse projeto
+
+19
+00:01:06,800 --> 00:01:12,005
+é para analisar os atributos
+dos clientes existentes
+
+20
+00:01:12,038 --> 00:01:18,612
+e combiná-los com a base de dados
+das pessoas na Alemanha.
+
+21
+00:01:18,645 --> 00:01:20,714
+Acho que outro desafio
+em seu projeto
+
+22
+00:01:20,747 --> 00:01:26,520
+é que você tem uma quantidade enorme
+de variáveis dos atributos,
+
+23
+00:01:26,553 --> 00:01:30,724
+e claro que faz sentido agrupá-las
+de forma inteligente.
+
+24
+00:01:30,757 --> 00:01:32,793
+Isso é um trabalho diário.
+
+25
+00:01:32,826 --> 00:01:34,461
+Algo que fazemos
+todos os dias.
+
+26
+00:01:34,561 --> 00:01:38,298
+Então, há informações financeiras
+e demográficas
+
+27
+00:01:38,332 --> 00:01:40,868
+-sobre diferentes indivíduos?
+-Sim.
+
+28
+00:01:40,901 --> 00:01:45,105
+Uma das coisas que os estudantes
+provavelmente vão querer fazer
+
+29
+00:01:45,138 --> 00:01:49,409
+é tentar descobrir como as coisas
+se relacionam na base de dados.
+
+30
+00:01:49,443 --> 00:01:53,380
+E também tem a bagunça
+de se trabalhar com dados.
+
+31
+00:01:53,413 --> 00:01:56,083
+Se está puxando de fontes públicas,
+às vezes as informações
+
+32
+00:01:56,116 --> 00:01:58,018
+podem não ter sido
+inseridas corretamente.
+
+33
+00:01:58,051 --> 00:01:59,686
+Isso pode ser
+verdade nesse caso?
+
+34
+00:01:59,720 --> 00:02:03,423
+É totalmente verdade.
+Mesmo pegando dados públicos,
+
+35
+00:02:03,457 --> 00:02:08,028
+dados são sempre bagunçados
+e sempre precisam ser limpos.
+
+36
+00:02:08,061 --> 00:02:12,299
+Você sempre precisa passar
+bastante tempo para entender
+
+37
+00:02:12,332 --> 00:02:15,302
+o que os dados dizem,
+essencialmente.
+
+38
+00:02:15,335 --> 00:02:19,396
+Vemos isso nesses contextos
+
+39
+00:02:19,429 --> 00:02:21,642
+em que trabalhamos
+direto com o cliente.
+
+40
+00:02:21,675 --> 00:02:28,515
+Onde achamos que os dados deveriam
+estar limpos, é uma bagunça.
+
+41
+00:02:28,549 --> 00:02:31,552
+Timo, muito obrigado pelo insight
+sobre os conjuntos de dados.
+
+42
+00:02:31,585 --> 00:02:36,690
+Obrigado a você e aos seus alunos
+por participarem do projeto.
+
+43
+00:02:36,723 --> 00:02:38,292
+É um projeto da vida real.
+
+44
+00:02:38,325 --> 00:02:41,762
+São dados reais.
+Então boa sorte.
+
