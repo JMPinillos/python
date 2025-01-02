@@ -1,0 +1,54 @@
+1
+
+00:00:00,640  -->  00:00:04,760
+To introduce PCA, let's consider an example.
+
+2
+
+00:00:04,760  -->  00:00:08,420
+Here, we have a number of factors that are related to homes,
+
+3
+
+00:00:08,420  -->  00:00:12,580
+but actually there are two broad categories that these factors fall into.
+
+4
+
+00:00:12,580  -->  00:00:14,040
+The size of the house,
+
+5
+
+00:00:14,040  -->  00:00:16,040
+and the neighborhood that the house is in.
+
+6
+
+00:00:16,040  -->  00:00:19,640
+These two factors are known as latent features.
+
+7
+
+00:00:19,640  -->  00:00:22,840
+They are features that aren't directly in our dataset,
+
+8
+
+00:00:22,840  -->  00:00:26,780
+but encompass groupings of the features we have in our dataset.
+
+9
+
+00:00:26,780  -->  00:00:30,800
+Surveys often have questions that are related to latent features.
+
+10
+
+00:00:30,800  -->  00:00:33,180
+Take a look at these survey questions.
+
+11
+
+00:00:33,180  -->  00:00:37,880
+Can you identify which latent features are related to these questions?
