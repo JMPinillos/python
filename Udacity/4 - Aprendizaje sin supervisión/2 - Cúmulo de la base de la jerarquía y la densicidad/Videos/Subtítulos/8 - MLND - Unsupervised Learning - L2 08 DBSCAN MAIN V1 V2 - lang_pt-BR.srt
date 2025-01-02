@@ -1,0 +1,399 @@
+1
+00:00:01,567 --> 00:00:04,600
+Vamos ver
+como o DBSCAN funciona.
+
+2
+00:00:04,633 --> 00:00:08,233
+DBSCAN significa Density-Based
+Spatial Clustering
+
+3
+00:00:08,267 --> 00:00:10,533
+of Applications with Noise.
+
+4
+00:00:10,567 --> 00:00:14,167
+Ele agrupa pontos
+que estão próximos.
+
+5
+00:00:14,200 --> 00:00:16,833
+Neste exemplo
+vemos uma grande diferença
+
+6
+00:00:16,867 --> 00:00:20,400
+em relação aos outros métodos
+de agrupamento.
+
+7
+00:00:20,433 --> 00:00:24,300
+A diferença é que nem todo ponto
+faz parte de um agrupamento.
+
+8
+00:00:24,333 --> 00:00:27,233
+O DBSCAN rotulou os pontos
+como ruído.
+
+9
+00:00:27,267 --> 00:00:29,767
+Isso nos mostra
+a potência do DBSCAN
+
+10
+00:00:29,800 --> 00:00:33,633
+e como lida com conjuntos
+de dados com ruído.
+
+11
+00:00:33,667 --> 00:00:37,800
+Vamos ver
+como o DBSCAN funciona.
+
+12
+00:00:37,833 --> 00:00:39,600
+Temos este
+conjunto de dados.
+
+13
+00:00:39,633 --> 00:00:43,367
+O DBSCAN começa selecionando
+um ponto arbitrariamente.
+
+14
+00:00:43,400 --> 00:00:45,233
+Vamos supor que seja este.
+
+15
+00:00:45,267 --> 00:00:48,633
+Vamos ver a área
+em volta dele,
+
+16
+00:00:48,667 --> 00:00:51,767
+que é definida
+pela distância épsilon,
+
+17
+00:00:51,800 --> 00:00:55,000
+que é uma entrada que damos
+ao DBSCAN.
+
+18
+00:00:55,033 --> 00:00:57,933
+Existe algum outro ponto
+nesta área?
+
+19
+00:00:57,967 --> 00:01:00,600
+No caso não há nenhum,
+
+20
+00:01:00,633 --> 00:01:04,167
+então este ponto é considerado
+um ponto de ruído.
+
+21
+00:01:04,200 --> 00:01:06,200
+Não faz parte
+dos agrupamentos.
+
+22
+00:01:06,233 --> 00:01:09,300
+Depois pegamos outro ponto,
+como este aqui.
+
+23
+00:01:09,333 --> 00:01:11,800
+Vamos ver a área.
+Tem algum outro ponto?
+
+24
+00:01:11,833 --> 00:01:14,267
+No caso temos dois pontos,
+
+25
+00:01:14,300 --> 00:01:17,200
+inclusive o que estamos
+analisando.
+
+26
+00:01:17,233 --> 00:01:19,833
+É o suficiente para classificar
+como agrupamento?
+
+27
+00:01:19,867 --> 00:01:23,067
+É outra entrada:
+o número mínimo de pontos.
+
+28
+00:01:23,100 --> 00:01:26,833
+Neste caso, o número mínimo
+de pontos é cinco.
+
+29
+00:01:26,867 --> 00:01:29,733
+Só temos dois pontos,
+e não cinco,
+
+30
+00:01:29,767 --> 00:01:32,733
+então o ponto é um ruído.
+
+31
+00:01:32,767 --> 00:01:35,933
+Este ponto aqui
+também é ruído
+
+32
+00:01:35,967 --> 00:01:40,467
+porque não há cinco pontos
+em volta dele.
+
+33
+00:01:40,500 --> 00:01:42,467
+Vamos ver este ponto aqui.
+
+34
+00:01:42,500 --> 00:01:45,033
+Esta é a área.
+Tem cinco pontos?
+
+35
+00:01:45,067 --> 00:01:47,533
+Tem um, dois, três, quatro,
+
+36
+00:01:47,567 --> 00:01:51,467
+se contarmos com estes
+que não fazem parte direito.
+
+37
+00:01:51,500 --> 00:01:54,867
+São só quatro pontos.
+Também é ruído.
+
+38
+00:01:54,900 --> 00:01:58,800
+As coisas ficam interessantes
+quando analisamos este ponto.
+
+39
+00:01:58,833 --> 00:02:00,400
+Esta é a área
+
+40
+00:02:00,433 --> 00:02:03,800
+e temos um, dois, três,
+quatro, cinco pontos.
+
+41
+00:02:03,833 --> 00:02:06,500
+Encontramos um agrupamento.
+
+42
+00:02:06,533 --> 00:02:09,533
+Este ponto é chamado
+de ponto central,
+
+43
+00:02:09,567 --> 00:02:12,500
+e nós identificamos
+o 1º agrupamento.
+
+44
+00:02:12,533 --> 00:02:16,300
+Vamos continuar analisando
+cada ponto do agrupamento,
+
+45
+00:02:16,333 --> 00:02:19,233
+identificando se são
+pontos centrais ou não.
+
+46
+00:02:19,267 --> 00:02:23,300
+Nenhum dos outros pontos
+tem cinco pontos na área.
+
+47
+00:02:23,333 --> 00:02:26,333
+Apesar de fazerem parte
+do 1º agrupamento,
+
+48
+00:02:26,367 --> 00:02:29,300
+todos são considerados
+pontos marginais.
+
+49
+00:02:29,333 --> 00:02:32,667
+Vamos escolher outro ponto.
+Este aqui.
+
+50
+00:02:32,700 --> 00:02:35,900
+Tem cinco pontos na área?
+Tem, sim.
+
+51
+00:02:35,933 --> 00:02:39,267
+Então este
+é um ponto central.
+
+52
+00:02:39,300 --> 00:02:42,667
+Continuamos analisando
+os pontos na área.
+
+53
+00:02:42,700 --> 00:02:45,400
+Este aqui
+é um ponto marginal.
+
+54
+00:02:45,433 --> 00:02:48,900
+Faz parte do agrupamento,
+mas não é um ponto central.
+
+55
+00:02:48,933 --> 00:02:51,033
+Este ponto é central.
+
+56
+00:02:51,067 --> 00:02:54,167
+Continuamos analisando
+os pontos,
+
+57
+00:02:54,200 --> 00:02:57,800
+que no fim vai nos dar
+o 2º agrupamento.
+
+58
+00:02:57,833 --> 00:03:01,000
+O formato do 2º agrupamento
+é diferente.
+
+59
+00:03:01,033 --> 00:03:04,233
+Podemos dizer
+que o 1º agrupamento é compacto,
+
+60
+00:03:04,267 --> 00:03:06,800
+mas o 2º agrupamento
+é alongado
+
+61
+00:03:06,833 --> 00:03:09,133
+e não necessariamente
+compacto.
+
+62
+00:03:09,167 --> 00:03:11,533
+Vamos comparar o DBSCAN
+ao k-means
+
+63
+00:03:11,567 --> 00:03:13,933
+nestes conjuntos de dados
+de referência.
+
+64
+00:03:13,967 --> 00:03:16,833
+No primeiro,
+o DBSCAN gera isto.
+
+65
+00:03:16,867 --> 00:03:18,867
+Não é muito útil.
+
+66
+00:03:18,900 --> 00:03:21,867
+Todos os pontos fazem parte
+de um agrupamento.
+
+67
+00:03:21,900 --> 00:03:24,400
+Mas, no conjunto de dados
+dois-crescentes,
+
+68
+00:03:24,433 --> 00:03:27,233
+o DBSCAN os define
+muito bem.
+
+69
+00:03:27,267 --> 00:03:30,467
+Isso foi feito sem a entrada
+de número de agrupamentos.
+
+70
+00:03:30,500 --> 00:03:34,667
+O DBSCAN recebe o épsilon
+e o número mínimo de pontos
+
+71
+00:03:34,700 --> 00:03:35,967
+como entradas,
+
+72
+00:03:36,000 --> 00:03:38,167
+e não o número
+de agrupamentos.
+
+73
+00:03:38,200 --> 00:03:41,833
+O DBSCAN é ótimo para agrupar
+os dois-crescentes.
+
+74
+00:03:41,867 --> 00:03:45,200
+E os dois anéis?
+Também agrupa bem.
+
+75
+00:03:45,233 --> 00:03:47,500
+Eles são bem definidos.
+
+76
+00:03:47,533 --> 00:03:52,133
+Os parâmetros do DBSCAN
+são agressivos aqui.
+
+77
+00:03:52,167 --> 00:03:54,833
+Tudo isto é ruído,
+
+78
+00:03:54,867 --> 00:03:58,867
+e nós temos um, dois, três,
+quatro, cinco, seis agrupamentos.
+
+79
+00:03:58,900 --> 00:04:00,667
+O mesmo acontece aqui.
+
+80
+00:04:00,700 --> 00:04:04,500
+Ele encontrou as massas centrais
+dos três agrupamentos.
+
+81
+00:04:04,533 --> 00:04:06,600
+Se mudarmos as entradas,
+
+82
+00:04:06,633 --> 00:04:11,400
+ele vai poder separar bem
+os três formatos que queremos.
+
+83
+00:04:11,433 --> 00:04:14,733
+Neste conjunto de dados,
+ele se sai bem, como o k-means.
+
