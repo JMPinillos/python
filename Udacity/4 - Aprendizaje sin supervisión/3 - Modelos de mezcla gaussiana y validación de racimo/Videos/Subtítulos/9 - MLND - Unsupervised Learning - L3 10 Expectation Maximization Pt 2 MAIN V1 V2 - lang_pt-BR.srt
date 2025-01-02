@@ -1,0 +1,451 @@
+1
+00:00:00,148 --> 00:00:04,070
+O terceiro passo do algoritmo
+de maximização da expectativa
+
+2
+00:00:04,104 --> 00:00:06,374
+para o Modelo de Mistura
+de gaussianas
+
+3
+00:00:06,408 --> 00:00:10,503
+é pegar o que foi produzido
+no passo 2,
+
+4
+00:00:10,537 --> 00:00:13,079
+que foi o pertencimento
+de todos os pontos
+
+5
+00:00:13,113 --> 00:00:17,029
+a todos os dois agrupamentos
+que nós temos,
+
+6
+00:00:17,063 --> 00:00:22,366
+e usá-los para criar
+novos parâmetros para as gaussianas.
+
+7
+00:00:22,724 --> 00:00:26,983
+Então, o propósito do passo 3
+é usar o que o passo 2
+
+8
+00:00:27,017 --> 00:00:28,806
+produziu como valor
+de entrada,
+
+9
+00:00:28,840 --> 00:00:31,629
+com o objetivo
+de preencher esta tabela,
+
+10
+00:00:31,663 --> 00:00:35,078
+que diz que, para o agrupamento A,
+precisamos de uma nova média
+
+11
+00:00:35,112 --> 00:00:36,710
+e de uma nova variância,
+
+12
+00:00:36,744 --> 00:00:38,687
+e faremos o mesmo
+com o agrupamento B.
+
+13
+00:00:38,721 --> 00:00:43,791
+Tudo se resume a obter
+estes quatro valores.
+
+14
+00:00:43,825 --> 00:00:46,702
+Vamos fazer isso.
+
+15
+00:00:46,736 --> 00:00:49,667
+A nova média
+para o agrupamento A,
+
+16
+00:00:50,034 --> 00:00:52,406
+dado o resultado do passo 2,
+
+17
+00:00:52,440 --> 00:00:56,934
+vem do cálculo da média ponderada
+de todos estes pontos.
+
+18
+00:00:56,968 --> 00:01:02,222
+A média ponderada não responde
+só pelos parâmetros de cada ponto,
+
+19
+00:01:02,256 --> 00:01:07,700
+mas também pelo quanto
+ele pertence ao agrupamento A,
+
+20
+00:01:07,734 --> 00:01:09,838
+e isso são estes termos
+aqui.
+
+21
+00:01:09,872 --> 00:01:11,262
+Vamos fazer este cálculo.
+
+22
+00:01:11,296 --> 00:01:13,910
+Esta é a tabela resultante
+do passo 2,
+
+23
+00:01:13,944 --> 00:01:16,919
+onde preenchemos todos
+os pertencimentos
+
+24
+00:01:16,953 --> 00:01:18,974
+para todos os pontos
+em ambos os agrupamentos.
+
+25
+00:01:19,008 --> 00:01:20,982
+Os números estão um pouco
+diferentes aqui,
+
+26
+00:01:21,016 --> 00:01:24,686
+porque este é o cálculo correto
+em que respondemos
+
+27
+00:01:24,720 --> 00:01:27,150
+pelo coeficiente de mistura.
+
+28
+00:01:27,184 --> 00:01:31,014
+Este valor aqui é arbitrário.
+Eu o adicionei para mostrar
+
+29
+00:01:31,048 --> 00:01:34,333
+que a precisão nem sempre
+é de 99%.
+
+30
+00:01:34,367 --> 00:01:36,950
+Pode ser de 55%, 40%, 30%
+
+31
+00:01:36,984 --> 00:01:39,294
+e qualquer coisa
+entre 0 e 1.
+
+32
+00:01:39,328 --> 00:01:43,623
+É assim que calculamos
+a média ponderada.
+
+33
+00:01:43,657 --> 00:01:49,326
+Passamos por cada fileira
+e multiplicamos esta célula
+
+34
+00:01:49,360 --> 00:01:53,502
+por um array, ou um vetor,
+que contém estes dois valores.
+
+35
+00:01:53,536 --> 00:01:55,198
+Isso seria este termo.
+
+36
+00:01:55,232 --> 00:01:58,175
+E então fazemos isso
+para cada fileira, somando-as,
+
+37
+00:01:58,209 --> 00:02:00,493
+o que seria todo este termo.
+
+38
+00:02:00,527 --> 00:02:03,669
+Depois, somamos os valores
+desta coluna,
+
+39
+00:02:03,703 --> 00:02:06,254
+e é por isso que dividimos.
+
+40
+00:02:06,288 --> 00:02:09,798
+Fazemos esse cálculo
+e obtemos a nova média
+
+41
+00:02:09,832 --> 00:02:11,614
+para o agrupamento A.
+
+42
+00:02:11,648 --> 00:02:14,125
+Fazemos o mesmo
+para o agrupamento B,
+
+43
+00:02:14,159 --> 00:02:16,805
+com a exceção de que, aqui,
+observamos a média ponderada
+
+44
+00:02:16,839 --> 00:02:18,342
+destes pontos.
+
+45
+00:02:18,376 --> 00:02:23,054
+O cálculo é quase o mesmo
+e, assim, obtemos os valores novos.
+
+46
+00:02:23,088 --> 00:02:26,246
+Para calcular a nova variância,
+fazemos algo parecido.
+
+47
+00:02:26,838 --> 00:02:32,446
+Este termo é estranhamente
+parecido com o método normal
+
+48
+00:02:32,480 --> 00:02:35,333
+com o qual a variância
+é calculada.
+
+49
+00:02:35,367 --> 00:02:37,667
+Só que, aqui, faremos uma versão
+ponderada dele.
+
+50
+00:02:37,700 --> 00:02:42,400
+Vamos multiplicar
+pelo pertencimento
+
+51
+00:02:42,433 --> 00:02:43,766
+a cada agrupamento.
+
+52
+00:02:44,174 --> 00:02:48,454
+Se aplicarmos os dados
+que obtemos no passo 2,
+
+53
+00:02:48,488 --> 00:02:52,581
+obtemos um valor novo
+para a nova variância
+
+54
+00:02:52,615 --> 00:02:56,667
+para o agrupamento A,
+e fazemos o mesmo para o B.
+
+55
+00:02:57,222 --> 00:02:59,573
+Agora, completamos
+o passo 3.
+
+56
+00:02:59,607 --> 00:03:02,367
+Temos as duas
+gaussianas novas
+
+57
+00:03:02,400 --> 00:03:05,390
+e podemos compará-las
+com as gaussianas antigas.
+
+58
+00:03:05,424 --> 00:03:08,502
+Veja este gráfico
+com as gaussianas antigas.
+
+59
+00:03:08,536 --> 00:03:12,478
+Esta é uma sobreposição
+das gaussiana antiga e da nova.
+
+60
+00:03:12,512 --> 00:03:15,633
+Vemos que a gaussiana verde
+começou a se mover um pouco
+
+61
+00:03:15,667 --> 00:03:20,085
+para cima e para a direita.
+Isto é um passo.
+
+62
+00:03:20,119 --> 00:03:22,438
+Se ela não convergir,
+vamos continuar fazendo
+
+63
+00:03:22,472 --> 00:03:24,886
+cinco, dez, vinte, trinta passos
+como esses
+
+64
+00:03:24,920 --> 00:03:29,205
+até elas convergirem
+em uma mistura gaussiana
+
+65
+00:03:29,239 --> 00:03:32,429
+que produza um bom resultado
+para o problema.
+
+66
+00:03:32,834 --> 00:03:36,949
+O quarto passo é avaliar
+a log-verossimilhança.
+
+67
+00:03:37,749 --> 00:03:42,606
+E a log-verossimilhança faz a soma
+para todos os agrupamentos.
+
+68
+00:03:42,640 --> 00:03:46,509
+Este é o coeficiente de mistura
+relacionado a este grupo.
+
+69
+00:03:46,543 --> 00:03:49,837
+E esta é a distribuição normal
+de cada ponto
+
+70
+00:03:50,233 --> 00:03:52,966
+dado o parâmetro
+do agrupamento.
+
+71
+00:03:53,509 --> 00:03:57,725
+Este termo como um todo
+é chamado de "log-verossimilhança".
+
+72
+00:03:57,759 --> 00:04:02,533
+O que ele diz é que quanto maior
+for este número,
+
+73
+00:04:02,567 --> 00:04:06,950
+mais certeza temos de que o modelo
+de mistura que geramos
+
+74
+00:04:06,984 --> 00:04:08,949
+é responsável pela criação
+dos dados,
+
+75
+00:04:08,983 --> 00:04:11,854
+ou pelo encaixe do conjunto
+de dados que temos.
+
+76
+00:04:11,888 --> 00:04:16,109
+O propósito aqui é maximizar
+este valor, este termo.
+
+77
+00:04:16,567 --> 00:04:21,461
+Fazemos isso escolhendo
+os parâmetros das gaussianas,
+
+78
+00:04:21,495 --> 00:04:24,214
+incluindo o coeficiente
+de mistura,
+
+79
+00:04:24,248 --> 00:04:27,869
+a média e a variância
+de cada gaussiana.
+
+80
+00:04:27,903 --> 00:04:30,100
+Quanto melhores
+forem os parâmetros que pegarmos,
+
+81
+00:04:30,133 --> 00:04:33,037
+maior será o valor
+de todo este termo.
+
+82
+00:04:33,071 --> 00:04:35,997
+Fazemos isso até
+o algoritmo convergir,
+
+83
+00:04:36,031 --> 00:04:37,542
+até que ele chegue ao máximo,
+
+84
+00:04:37,576 --> 00:04:43,213
+ou comece a crescer uma fração
+minúscula por passo.
+
+85
+00:04:43,247 --> 00:04:45,541
+É aí que podemos
+pausar o algoritmo e dizer:
+
+86
+00:04:45,575 --> 00:04:47,517
+"Certo, convergimos.
+
+87
+00:04:47,551 --> 00:04:52,533
+Vamos escolher essas gaussianas
+como componentes de um Agrupamento
+
+88
+00:04:52,567 --> 00:04:55,773
+Modelo de Mistura de gaussianas,
+e agrupar baseado nelas."
+
+89
+00:04:55,807 --> 00:05:00,267
+Este é o último passo do algoritmo
+de maximização das expectativas
+
+90
+00:05:00,600 --> 00:05:02,845
+para fazer Agrupamento Modelo
+de Mistura de gaussianas.
+
+91
+00:05:02,879 --> 00:05:05,142
+No próximo vídeo, veremos
+um exemplo visual,
+
+92
+00:05:05,176 --> 00:05:08,837
+em que podemos
+ver os passos 1, 2 e 3:
+
+93
+00:05:08,871 --> 00:05:11,365
+o processo inteiro
+até a convergência.
+

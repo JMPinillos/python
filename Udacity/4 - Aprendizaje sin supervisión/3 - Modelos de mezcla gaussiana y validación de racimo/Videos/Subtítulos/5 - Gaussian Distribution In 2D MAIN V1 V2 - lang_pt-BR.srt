@@ -1,0 +1,128 @@
+1
+00:00:00,321 --> 00:00:05,300
+Imagine que estamos examinando
+duas notas de cada aluno.
+
+2
+00:00:05,334 --> 00:00:08,825
+Temos 99 alunos e,
+para cada um,
+
+3
+00:00:08,855 --> 00:00:12,066
+a nota da prova de Química
+e a nota da prova de Geologia.
+
+4
+00:00:12,096 --> 00:00:15,162
+Cada uma destas colunas
+tem sua própria média
+
+5
+00:00:15,192 --> 00:00:17,017
+e seu desvio padrão.
+
+6
+00:00:17,370 --> 00:00:19,857
+Se as colocarmos em um gráfico
+de duas dimensões,
+
+7
+00:00:19,887 --> 00:00:22,049
+em que as notas de Química
+são o eixo x
+
+8
+00:00:22,079 --> 00:00:24,016
+e as notas de Geologia
+são o eixo y,
+
+9
+00:00:24,046 --> 00:00:25,850
+ficamos com uma forma
+como esta.
+
+10
+00:00:25,880 --> 00:00:28,153
+Podemos fazer histogramas
+como estes
+
+11
+00:00:28,183 --> 00:00:30,186
+para cada eixo,
+para cada noda da prova,
+
+12
+00:00:30,216 --> 00:00:33,793
+e podemos ver as curvas de sino
+reemergindo aqui.
+
+13
+00:00:34,145 --> 00:00:37,505
+E, como este conjunto de dados
+tem mais de uma variável,
+
+14
+00:00:37,535 --> 00:00:42,121
+e cada uma das duas variáveis
+são uma distribuição de Gauss,
+
+15
+00:00:42,151 --> 00:00:43,665
+este conjunto de dados
+é chamado
+
+16
+00:00:43,695 --> 00:00:46,377
+de distribuição de Gauss
+multivariada.
+
+17
+00:00:46,407 --> 00:00:49,281
+Então, ela é uma distribuição
+de Gauss em mais de uma variável.
+
+18
+00:00:49,311 --> 00:00:53,913
+Uma forma visual para a distribuição
+de Gauss de duas dimensões
+
+19
+00:00:53,943 --> 00:00:56,225
+são esses círculos
+concêntricos.
+
+20
+00:00:56,255 --> 00:01:00,588
+O centro é a média
+dos dois eixos,
+
+21
+00:01:00,618 --> 00:01:06,596
+e esta primeira elipse é a mediana
+mais ou menos o desvio padrão
+
+22
+00:01:07,313 --> 00:01:08,937
+ao longo de cada eixo.
+
+23
+00:01:08,967 --> 00:01:12,881
+Então, este círculo contém
+68% dos pontos de dados.
+
+24
+00:01:12,911 --> 00:01:17,593
+O segundo círculo contém 95%,
+e o último contém 99%.
+
+25
+00:01:18,129 --> 00:01:23,673
+Cada elipse concêntrica
+nos mostra onde um, duas ou três
+
+26
+00:01:23,703 --> 00:01:26,585
+desvios padrões se encontram
+neste conjunto de dados.
+
