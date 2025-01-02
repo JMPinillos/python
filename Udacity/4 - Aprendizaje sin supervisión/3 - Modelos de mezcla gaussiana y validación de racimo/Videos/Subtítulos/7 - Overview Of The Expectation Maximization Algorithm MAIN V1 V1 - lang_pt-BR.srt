@@ -1,0 +1,128 @@
+1
+00:00:00,347 --> 00:00:02,230
+Aqui, temos
+um panorama geral
+
+2
+00:00:02,260 --> 00:00:05,381
+de como o Agrupamento Modelo
+de Mistura de gaussianas funciona,
+
+3
+00:00:05,411 --> 00:00:08,462
+e vamos usar o conjunto de dados
+do qual falamos no vídeo anterior
+
+4
+00:00:08,492 --> 00:00:09,773
+para fazer isso.
+
+5
+00:00:09,803 --> 00:00:12,214
+Para fazer esse agrupamento,
+precisamos seguir
+
+6
+00:00:12,244 --> 00:00:15,077
+o algoritmo de maximização
+da expectativa
+
+7
+00:00:15,107 --> 00:00:16,877
+para mistura de gaussianas.
+
+8
+00:00:16,907 --> 00:00:18,765
+E isso funciona assim:
+
+9
+00:00:18,795 --> 00:00:23,061
+o primeiro passo é inicializar
+"K" distribuições de Gauss.
+
+10
+00:00:23,091 --> 00:00:25,636
+K, neste caso,
+neste exemplo, é 2,
+
+11
+00:00:25,666 --> 00:00:28,220
+porque sabemos que havia
+dois conjuntos de dados originais,
+
+12
+00:00:28,250 --> 00:00:29,604
+duas fontes originais.
+
+13
+00:00:29,638 --> 00:00:32,719
+O segundo passo é fazer
+o agrupamento suave dos dados
+
+14
+00:00:32,753 --> 00:00:35,934
+nas duas gaussianas
+que inicializamos.
+
+15
+00:00:35,964 --> 00:00:39,438
+Este é o chamado "passo
+de expectativa", ou "passo E".
+
+16
+00:00:39,468 --> 00:00:43,012
+O terceiro passo é reestimar
+as gaussianas
+
+17
+00:00:43,042 --> 00:00:45,453
+baseado no agrupamento
+suave.
+
+18
+00:00:45,483 --> 00:00:47,581
+Este é o chamado "passo
+de maximização",
+
+19
+00:00:47,611 --> 00:00:48,972
+ou "passo M".
+
+20
+00:00:49,002 --> 00:00:52,493
+No quarto passo, avaliamos
+a log-verossimilhança
+
+21
+00:00:52,523 --> 00:00:54,709
+para verificar convergências.
+
+22
+00:00:54,739 --> 00:00:59,133
+Se ele convergir, está tudo certo
+e retornamos os valores.
+
+23
+00:00:59,163 --> 00:01:03,293
+Se não, voltamos ao passo 2,
+reiteramos
+
+24
+00:01:03,323 --> 00:01:04,789
+e fazemos tudo de novo
+
+25
+00:01:04,819 --> 00:01:09,118
+até convergirmos e encontrarmos
+as duas gaussianas que queremos.
+
+26
+00:01:09,762 --> 00:01:12,022
+Este é um rápido panorama
+do algoritmo.
+
+27
+00:01:12,379 --> 00:01:15,214
+Vamos vê-lo mais detalhadamente
+no próximo vídeo.
+
