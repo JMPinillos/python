@@ -1,0 +1,515 @@
+1
+00:00:00,133 --> 00:00:03,533
+Neste vídeo vamos ver
+três técnicas diferentes
+
+2
+00:00:03,567 --> 00:00:05,633
+de agrupamento hierárquico
+
+3
+00:00:05,667 --> 00:00:08,167
+que não seja o agrupamento
+de ligação simples.
+
+4
+00:00:08,200 --> 00:00:09,733
+Na verdade,
+
+5
+00:00:09,767 --> 00:00:13,967
+se tentar usar o agrupamento
+de ligação simples no scikit-learn,
+
+6
+00:00:14,000 --> 00:00:17,867
+você não vai conseguir
+porque não existe.
+
+7
+00:00:17,900 --> 00:00:20,500
+As três técnicas
+de agrupamento hierárquico
+
+8
+00:00:20,533 --> 00:00:22,333
+que vamos ver neste vídeo
+
+9
+00:00:22,367 --> 00:00:26,467
+fazem parte do componente
+de agrupamento aglomerado
+
+10
+00:00:26,500 --> 00:00:28,033
+do scikit-learn,
+
+11
+00:00:28,067 --> 00:00:30,340
+que não inclui
+o agrupamento de ligação simples,
+
+12
+00:00:30,373 --> 00:00:33,467
+mas inclui o agrupamento
+de ligação completa.
+
+13
+00:00:33,500 --> 00:00:35,267
+O agrupamento aglomerado
+
+14
+00:00:35,300 --> 00:00:37,800
+é a parte do agrupamento
+hierárquico
+
+15
+00:00:37,833 --> 00:00:39,567
+que começa
+de baixo para cima,
+
+16
+00:00:39,600 --> 00:00:42,100
+deduzindo que cada ponto
+seja um agrupamento
+
+17
+00:00:42,133 --> 00:00:44,433
+e depois cria
+outros agrupamentos.
+
+18
+00:00:44,467 --> 00:00:48,533
+Isso o separa de outra parte
+do agrupamento hierárquico
+
+19
+00:00:48,567 --> 00:00:51,367
+que deduz que tudo
+seja um agrupamento só
+
+20
+00:00:51,400 --> 00:00:54,567
+e vai dividindo
+em agrupamentos menores.
+
+21
+00:00:54,600 --> 00:00:56,800
+O agrupamento
+de ligação completa
+
+22
+00:00:56,833 --> 00:00:59,333
+é muito parecido
+com o de ligação simples.
+
+23
+00:00:59,367 --> 00:01:03,800
+Ele começa deduzindo
+que cada ponto é um agrupamento,
+
+24
+00:01:03,833 --> 00:01:06,767
+computa as distâncias
+entre os agrupamentos
+
+25
+00:01:06,800 --> 00:01:09,933
+e une os dois agrupamentos
+mais próximos.
+
+26
+00:01:09,967 --> 00:01:13,800
+Os dois agrupamentos
+mais próximos no início são 4 e 5.
+
+27
+00:01:13,833 --> 00:01:17,233
+Vamos anotar aqui do lado.
+
+28
+00:01:17,267 --> 00:01:21,767
+Depois temos 1 e 2, 6 e 8...
+Igual à ligação simples.
+
+29
+00:01:21,800 --> 00:01:24,133
+Existe uma diferença aqui.
+
+30
+00:01:24,167 --> 00:01:27,300
+A distância entre 7
+e o agrupamento laranja
+
+31
+00:01:27,333 --> 00:01:31,433
+não é a distância entre 7
+e o ponto mais próximo, 6.
+
+32
+00:01:31,467 --> 00:01:34,900
+A ligação completa procura
+os dois pontos mais afastados
+
+33
+00:01:34,933 --> 00:01:36,633
+nos dois agrupamentos,
+
+34
+00:01:36,667 --> 00:01:39,733
+que é a distância
+entre os dois agrupamentos.
+
+35
+00:01:39,767 --> 00:01:42,367
+Então 7 e 8 é a distância
+
+36
+00:01:42,400 --> 00:01:45,133
+entre este agrupamento
+do ponto 7
+
+37
+00:01:45,167 --> 00:01:46,800
+e o agrupamento laranja.
+
+38
+00:01:46,833 --> 00:01:50,533
+É a distância mínima
+entre os agrupamentos,
+
+39
+00:01:50,567 --> 00:01:53,333
+então os dois são unidos.
+
+40
+00:01:53,367 --> 00:01:56,767
+A ligação simples faz isso,
+mas aqui há outro motivo.
+
+41
+00:01:56,800 --> 00:02:00,767
+Este passo é a única diferença
+entre a ligação simples e a completa
+
+42
+00:02:00,800 --> 00:02:03,733
+neste exemplo
+de conjunto de dados.
+
+43
+00:02:03,767 --> 00:02:06,533
+Depois continuamos
+criando a árvore
+
+44
+00:02:06,567 --> 00:02:08,900
+até ela ficar completa.
+
+45
+00:02:08,933 --> 00:02:12,333
+Depois podemos escolher
+quantos agrupamentos queremos.
+
+46
+00:02:12,367 --> 00:02:14,900
+Se quisermos dois,
+quebramos a árvore aqui.
+
+47
+00:02:14,933 --> 00:02:17,800
+Este é um agrupamento
+e este é outro.
+
+48
+00:02:17,833 --> 00:02:20,533
+A medida da distância
+na ligação completa
+
+49
+00:02:20,567 --> 00:02:22,967
+é entre os dois pontos
+mais afastados
+
+50
+00:02:23,000 --> 00:02:24,600
+entre dois agrupamentos.
+
+51
+00:02:24,633 --> 00:02:29,433
+Se chegarmos ao passo
+onde temos três agrupamentos,
+
+52
+00:02:29,467 --> 00:02:33,500
+a distância entre
+o rosa e o roxo é esta,
+
+53
+00:02:33,533 --> 00:02:35,800
+entre os dois pontos
+mais afastados.
+
+54
+00:02:35,833 --> 00:02:37,933
+A distância entre o verde
+e o roxo é esta
+
+55
+00:02:37,967 --> 00:02:42,333
+e a distância entre o verde
+e o rosa é esta.
+
+56
+00:02:42,367 --> 00:02:46,700
+Ao calcularmos as distâncias
+entre os agrupamentos,
+
+57
+00:02:46,733 --> 00:02:49,933
+escolhemos a distância mínima
+entre dois agrupamentos
+
+58
+00:02:49,967 --> 00:02:52,267
+e unimos
+os dois agrupamentos.
+
+59
+00:02:52,300 --> 00:02:54,833
+Essa medida de distância
+na ligação completa
+
+60
+00:02:54,867 --> 00:02:57,967
+produz agrupamentos
+compactos,
+
+61
+00:02:58,000 --> 00:03:01,433
+que são geralmente considerados
+melhores que os agrupamentos
+
+62
+00:03:01,467 --> 00:03:03,533
+produzidos
+pela ligação simples.
+
+63
+00:03:03,567 --> 00:03:07,800
+Mas a melhor medida de distância
+depende do conjunto de dados
+
+64
+00:03:07,833 --> 00:03:09,933
+e o que você quer realizar.
+
+65
+00:03:09,967 --> 00:03:12,167
+Um desafio
+com a ligação completa,
+
+66
+00:03:12,200 --> 00:03:14,033
+assim como na ligação simples,
+
+67
+00:03:14,067 --> 00:03:16,233
+é que só um ponto
+é analisado.
+
+68
+00:03:16,267 --> 00:03:20,300
+Depois de determinar quais são
+os dois pontos mais afastados,
+
+69
+00:03:20,333 --> 00:03:22,800
+ela não considera mais
+os outros pontos.
+
+70
+00:03:22,833 --> 00:03:24,533
+Neste caso,
+
+71
+00:03:24,567 --> 00:03:29,733
+no qual estes pontos podem ter
+sido parte de outro agrupamento,
+
+72
+00:03:29,767 --> 00:03:33,333
+a ligação completa
+não os considera
+
+73
+00:03:33,367 --> 00:03:36,000
+e só analisa
+os pontos mais afastados.
+
+74
+00:03:36,033 --> 00:03:38,600
+Pode ser bom pensar
+em outras maneiras
+
+75
+00:03:38,633 --> 00:03:40,633
+de calcular a medida
+de distância.
+
+76
+00:03:40,667 --> 00:03:43,767
+É o nosso próximo exemplo,
+a ligação média.
+
+77
+00:03:43,800 --> 00:03:45,633
+Também está no scikit-learn.
+
+78
+00:03:45,667 --> 00:03:48,900
+Ela analisa a distância
+entre todos os pontos
+
+79
+00:03:48,933 --> 00:03:52,167
+e os outros pontos
+no outro agrupamento.
+
+80
+00:03:52,200 --> 00:03:54,333
+A média
+de todas as distâncias
+
+81
+00:03:54,367 --> 00:03:56,800
+é a distância
+entre os dois agrupamentos.
+
+82
+00:03:56,833 --> 00:03:59,600
+Finalmente
+temos o método Ward.
+
+83
+00:03:59,633 --> 00:04:03,967
+É o método padrão
+no scikit-learn
+
+84
+00:04:04,000 --> 00:04:06,533
+para o agrupamento
+hierárquico.
+
+85
+00:04:06,567 --> 00:04:09,033
+É o método que tenta
+minimizar a variância
+
+86
+00:04:09,067 --> 00:04:11,333
+ao unir dois agrupamentos.
+
+87
+00:04:11,367 --> 00:04:14,033
+A maneira como o método Ward
+calcula a distância
+
+88
+00:04:14,067 --> 00:04:17,767
+entre os agrupamentos
+A e B aqui
+
+89
+00:04:17,800 --> 00:04:21,200
+é tentar encontrar
+um ponto central.
+
+90
+00:04:21,233 --> 00:04:24,533
+É só fazer uma média
+de todos os pontos
+
+91
+00:04:24,567 --> 00:04:27,067
+para ter o ponto central.
+
+92
+00:04:27,100 --> 00:04:30,033
+Depois calculamos a distância
+entre todos os pontos
+
+93
+00:04:30,067 --> 00:04:31,633
+e o ponto central.
+
+94
+00:04:31,667 --> 00:04:34,133
+Depois elevamos
+à segunda potência
+
+95
+00:04:34,167 --> 00:04:36,433
+e somamos todos assim.
+
+96
+00:04:36,467 --> 00:04:39,767
+Mas depois precisamos subtrair
+a variância que já existe
+
+97
+00:04:39,800 --> 00:04:41,333
+nos agrupamentos.
+
+98
+00:04:41,367 --> 00:04:44,567
+Fazemos isso ao estimar o ponto
+central nos agrupamentos.
+
+99
+00:04:44,600 --> 00:04:46,833
+Este é o ponto central
+do agrupamento A.
+
+100
+00:04:46,867 --> 00:04:50,900
+Depois subtraímos A1² e A2²,
+
+101
+00:04:50,933 --> 00:04:53,733
+que são as distâncias
+entre o 1º ponto e o centro
+
+102
+00:04:53,767 --> 00:04:56,200
+e o 2º ponto e o centro.
+
+103
+00:04:56,233 --> 00:04:58,933
+Fazemos a mesma coisa
+com o agrupamento B.
+
+104
+00:04:58,967 --> 00:05:02,600
+E esta seria a distância
+entre os dois agrupamentos.
+
+105
+00:05:02,633 --> 00:05:05,800
+Fazemos isso
+com os outros agrupamentos.
+
+106
+00:05:05,833 --> 00:05:10,733
+A distância que for menor
+une os agrupamentos.
+
+107
+00:05:10,767 --> 00:05:13,200
+Esse é o método Ward.
+
+108
+00:05:13,233 --> 00:05:15,733
+Depois vamos analisar
+a implementação.
+
