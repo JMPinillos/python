@@ -1,0 +1,209 @@
+1
+
+00:00:00,110  -->  00:00:03,194
+Estoy aquí con Timo, de Arvato,
+
+2
+
+00:00:03,194  -->  00:00:06,719
+y vamos a colaborar en un proyecto.
+
+3
+
+00:00:06,719  -->  00:00:11,339
+Así pues, el proyecto de aprendizaje no supervisado en el que estamos trabajando en esta lección,
+
+4
+
+00:00:11,339  -->  00:00:13,939
+en las últimas lecciones en realidad,
+
+5
+
+00:00:13,939  -->  00:00:21,704
+está orientado a estrategias para agrupar datos en clústeres y agruparlos de distintas formas.
+
+6
+
+00:00:21,704  -->  00:00:23,399
+Con respecto a los datos de Arvato con los que estamos trabajando,
+
+7
+
+00:00:23,399  -->  00:00:25,529
+¿podrías hablarnos un poco sobre la finalidad de su uso
+
+8
+
+00:00:25,530  -->  00:00:27,750
+y cuáles son las características de los datos
+
+9
+
+00:00:27,750  -->  00:00:32,960
+que quizás consideras más importantes para los objetivos empresariales que tienes para la empresa?
+
+10
+
+00:00:32,960  -->  00:00:35,375
+Claro. Entonces…
+
+11
+
+00:00:35,375  -->  00:00:41,329
+Tendrás un conjunto de datos que es una base de datos propiedad de Bertelsmann Arvato.
+
+12
+
+00:00:41,329  -->  00:00:44,664
+Contiene información demográfica,
+
+13
+
+00:00:44,664  -->  00:00:48,469
+unos 100 atributos de la población de Alemania.
+
+14
+
+00:00:48,469  -->  00:00:53,719
+Recopilamos estos datos de diversas fuentes públicas de Alemania.
+
+15
+
+00:00:53,719  -->  00:00:58,989
+También te proporcionamos un segundo conjunto de datos que incluye
+
+16
+
+00:00:58,990  -->  00:01:04,230
+atributos de información demográfica de los clientes de uno de nuestros clientes.
+
+17
+
+00:01:04,230  -->  00:01:06,760
+Lo que te pedimos en este proyecto es
+
+18
+
+00:01:06,760  -->  00:01:11,989
+que analices los atributos de los clientes existentes
+
+19
+
+00:01:11,989  -->  00:01:18,625
+y los cotejes con la base de datos de la población de Alemania.
+
+20
+
+00:01:18,625  -->  00:01:20,700
+Creo que otro reto en tu proyecto
+
+21
+
+00:01:20,700  -->  00:01:26,525
+es que verás esta enorme cantidad de variables de atributos
+
+22
+
+00:01:26,525  -->  00:01:30,715
+y tiene sentido agruparlas de forma inteligente.
+
+23
+
+00:01:30,715  -->  00:01:32,790
+Esta es una tarea cotidiana.
+
+24
+
+00:01:32,790  -->  00:01:34,460
+Es algo que hacemos todos los días.
+
+25
+
+00:01:34,459  -->  00:01:38,314
+Ahora, ¿hay información financiera y demográfica
+
+26
+
+00:01:38,314  -->  00:01:40,319
+sobre todas estas personas diferentes?
+
+27
+
+00:01:40,319  -->  00:01:40,879
+Sí.
+
+28
+
+00:01:40,879  -->  00:01:45,119
+Una cosa que probablemente quieran hacer los estudiantes es intentar
+
+29
+
+00:01:45,120  -->  00:01:49,410
+averiguar qué cosas están relacionadas entre sí dentro del conjunto de datos.
+
+30
+
+00:01:49,409  -->  00:01:53,390
+Además, trabajar con cualquier tipo de datos conlleva un cierto desorden.
+
+31
+
+00:01:53,390  -->  00:01:57,120
+Si los extraes de fuentes públicas, a veces las cosas no se han introducido correctamente.
+
+32
+
+00:01:57,120  -->  00:01:59,680
+¿Podría ser cierto en algunos casos?
+
+33
+
+00:01:59,680  -->  00:02:03,440
+Es totalmente cierto. Incluso cuando obtienes datos públicos,
+
+34
+
+00:02:03,439  -->  00:02:08,030
+estos siempre están desordenados y hay que limpiarlos.
+
+35
+
+00:02:08,030  -->  00:02:12,288
+Siempre hay que dedicar bastante tiempo a comprender de verdad
+
+36
+
+00:02:12,288  -->  00:02:15,309
+qué dicen los datos básicamente.
+
+37
+
+00:02:15,310  -->  00:02:21,640
+Lo vemos en estos contextos en los que trabajamos directamente con el cliente.
+
+38
+
+00:02:21,639  -->  00:02:28,509
+Cuando pensamos que deberían ser datos limpios, están desordenados.
+
+39
+
+00:02:28,509  -->  00:02:31,549
+Timo, muchas gracias por tu aportación sobre el conjunto de datos.
+
+40
+
+00:02:31,550  -->  00:02:36,675
+Gracias. Gracias a ti y gracias a los estudiantes por participar en este proyecto.
+
+41
+
+00:02:36,675  -->  00:02:38,285
+Es un proyecto del mundo real.
+
+42
+
+00:02:38,284  -->  00:02:41,770
+Son datos reales. Así que buena suerte.

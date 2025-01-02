@@ -1,0 +1,234 @@
+1
+
+00:00:00,000  -->  00:00:02,985
+Independent component analysis is
+
+2
+
+00:00:02,985  -->  00:00:06,930
+a method similar to PCA and random projection and that it
+
+3
+
+00:00:06,930  -->  00:00:11,450
+takes a set of features and produces a different set that is useful in some way.
+
+4
+
+00:00:11,450  -->  00:00:15,990
+But it's different in that PCA works to maximize variance,
+
+5
+
+00:00:15,990  -->  00:00:20,490
+ICA assumes that the features are mixtures of independent sources and it
+
+6
+
+00:00:20,490  -->  00:00:25,290
+tries to isolate these independent sources that are mixed in this dataset.
+
+7
+
+00:00:25,290  -->  00:00:29,565
+The classic example used to explain ICA is something called the cocktail party problem.
+
+8
+
+00:00:29,565  -->  00:00:32,140
+Let's look at a variation of this problem.
+
+9
+
+00:00:32,140  -->  00:00:37,765
+So, let's say that three of your friends go to an art show and there are three curtains.
+
+10
+
+00:00:37,765  -->  00:00:42,680
+One of them opens up and there's a person playing a piano there.
+
+11
+
+00:00:42,680  -->  00:00:45,205
+They play a nice tune on the piano,
+
+12
+
+00:00:45,205  -->  00:00:48,920
+you're in there to listen to it so you assume that it sounded good.
+
+13
+
+00:00:48,920  -->  00:00:51,350
+Then after a little bit of time
+
+14
+
+00:00:51,350  -->  00:00:55,185
+another curtain is uncovered and there is a person playing the cello.
+
+15
+
+00:00:55,185  -->  00:00:57,880
+The piano is still playing and then cello starts
+
+16
+
+00:00:57,880  -->  00:01:00,175
+playing but they're playing two different pieces.
+
+17
+
+00:01:00,175  -->  00:01:02,270
+They don't really work together.
+
+18
+
+00:01:02,270  -->  00:01:05,310
+There's sort of mixing together, and then,
+
+19
+
+00:01:05,310  -->  00:01:09,320
+the third curtain is opened and then there's a TV turned
+
+20
+
+00:01:09,320  -->  00:01:14,315
+on and there's this sign wave noise coming in.
+
+21
+
+00:01:14,315  -->  00:01:16,150
+It's a little bit of a mess.
+
+22
+
+00:01:16,150  -->  00:01:18,810
+So, here your friends decide that "Okay.
+
+23
+
+00:01:18,810  -->  00:01:23,030
+This is kind of interesting. Let's take our phones out and record this."
+
+24
+
+00:01:23,030  -->  00:01:26,995
+So, they record let's say six seconds of audio for this.
+
+25
+
+00:01:26,995  -->  00:01:32,265
+This friend was closer to the piano so they have more piano and they're recording,
+
+26
+
+00:01:32,265  -->  00:01:35,125
+this person was closer to the TV so they had more TV.
+
+27
+
+00:01:35,125  -->  00:01:38,630
+You have these three recordings and then each of them has
+
+28
+
+00:01:38,630  -->  00:01:42,200
+a different level of the original source which you don't have.
+
+29
+
+00:01:42,200  -->  00:01:43,585
+You don't have these recordings.
+
+30
+
+00:01:43,585  -->  00:01:47,040
+[piano and cello with faint TV noise] The first one sounds like this,
+
+31
+
+00:01:49,900  -->  00:01:57,530
+where the TV noise is a little faint and you can hear the piano and then the cello.
+
+32
+
+00:01:57,530  -->  00:02:06,105
+The second one there's a little bit more cello, [same music but cello and TV noise are louder]
+
+33
+
+00:02:06,105  -->  00:02:12,240
+and the TV got louder and the third one we can even see it here that the TV is little. [same music but TV noise is minimal]
+
+34
+
+00:02:16,850  -->  00:02:20,880
+So, if you have only these three recordings,
+
+35
+
+00:02:20,880  -->  00:02:24,060
+is there a way for you to retrieve the original signals?,
+
+36
+
+00:02:24,060  -->  00:02:26,675
+Datasets? The answer is yes.
+
+37
+
+00:02:26,675  -->  00:02:31,385
+That's what an example of what independent component analysis allows you to do.
+
+38
+
+00:02:31,385  -->  00:02:35,270
+ICA takes these three samples
+
+39
+
+00:02:35,270  -->  00:02:38,450
+or this dataset of sort of three dimensions and we tell it "All right,
+
+40
+
+00:02:38,450  -->  00:02:41,295
+there are three original components that were in there.
+
+41
+
+00:02:41,295  -->  00:02:43,475
+Can you find them in here?"
+
+42
+
+00:02:43,475  -->  00:02:51,510
+It would output piano.
+
+43
+
+00:02:51,510  -->  00:02:53,455
+When it's able to work,
+
+44
+
+00:02:53,455  -->  00:02:56,315
+it is able to isolate them and then the second output would
+
+45
+
+00:02:56,315  -->  00:03:06,090
+be the cello and then the TV.
+
+46
+
+00:03:10,520  -->  00:03:14,795
+So, this is a type of problem called the blind
+
+47
+
+00:03:14,795  -->  00:03:19,850
+source separation and that's the problem that ICA solves.
