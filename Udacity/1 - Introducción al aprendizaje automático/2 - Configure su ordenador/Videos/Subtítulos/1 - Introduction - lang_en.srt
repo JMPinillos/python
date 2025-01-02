@@ -1,0 +1,80 @@
+1
+00:00:00,000 --> 00:00:02,815
+Before we get too far on this journey,
+
+2
+00:00:02,815 --> 00:00:07,160
+let's talk about setting up your computer to complete this Nanodegree program.
+
+3
+00:00:07,160 --> 00:00:11,535
+In this lesson, we'll walk you through installing Anaconda with Python three,
+
+4
+00:00:11,535 --> 00:00:13,859
+which will use throughout the classroom.
+
+5
+00:00:13,859 --> 00:00:17,894
+Additionally, we have some notes on installing different text editors.
+
+6
+00:00:17,894 --> 00:00:20,009
+I personally use Atom.
+
+7
+00:00:20,010 --> 00:00:23,905
+However, you can use any text editor you think is best for you.
+
+8
+00:00:23,905 --> 00:00:28,490
+Matt and I will be teaming up to show you the different workflows we recommend,
+
+9
+00:00:28,489 --> 00:00:30,945
+as they're most common in industry.
+
+10
+00:00:30,945 --> 00:00:33,975
+If you already have your machine setup the way you like,
+
+11
+00:00:33,975 --> 00:00:36,375
+feel free to skip this whole lesson.
+
+12
+00:00:36,375 --> 00:00:38,310
+If you're setting up your computer for
+
+13
+00:00:38,310 --> 00:00:41,980
+the first time and get stuck on any part of this lesson,
+
+14
+00:00:41,979 --> 00:00:43,719
+reach out for help on Slack,
+
+15
+00:00:43,719 --> 00:00:45,484
+and we'll help you get through.
+
+16
+00:00:45,484 --> 00:00:50,429
+Don't worry, you'll be able to work through the program as you continue to get setup.
+
+17
+00:00:50,429 --> 00:00:53,460
+There are workspaces available in the classroom to get through
+
+18
+00:00:53,460 --> 00:00:56,575
+the program if you don't want to do the work locally.
+
+19
+00:00:56,575 --> 00:01:00,880
+However, we strongly recommend getting the setup on your local computer,
+
+20
+00:01:00,880 --> 00:01:03,890
+as it will prepare you for working in industry.
+
