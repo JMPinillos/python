@@ -4,7 +4,8 @@ def largo(texto):
     for _ in texto:
         resultado += 1
 
-        return resultado
+    return resultado
+
 
 print("chanchito")
 largo1 = largo("Hola mundo")
