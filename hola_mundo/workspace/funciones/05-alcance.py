@@ -1,21 +1,11 @@
-saludo = 25
+def largo(texto):
+    resultado = 0
+
+    for _ in texto:
+        resultado += 1
+
+        return resultado
 
 
-def saludar():
-    global saludo
-    saludo = "Hola mundo"
-    print(saludo)
-
-
-def saludaChanchito():
-    saludo = 24
-    return saludo
-
-
-result1 = saludo + 3
-print(result1)
-
-saludar()
-
-result2 = saludaChanchito() + 3
-print(result2)
+largo1 = largo("Hola mundo")
+print(largo1)
