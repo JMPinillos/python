@@ -1,4 +1,4 @@
-mascotas = "Lish", "Pachu", "Frida", "Pulgas", "lish"
+mascotas = ["Lish", "Pachu", "Frida", "Pulgas", "lish"]
 
 # for mascota in enumerate(mascotas):
 #     print(mascota[1])
