@@ -1,51 +1,92 @@
-from collections import Counter
+from pprint import pprint
+
 texto = "Hola mundo este es mi string"
 
-# ********** Parte 1 *********
-lista = []
 
-
+# 1 - FUNCIÓN PARA CREAR LISTA SIN ESPACIOS
 def text2list(text):
     return ([*text.replace(" ", "")])
 
 
-lista = text2list(texto)
-# print(lista)
-
-# ********** Parte 2 *********
-# ********** Con una función *********
-diccionario = {}
+# 2 -  FUNCIÓN PARA CREAR DICCIONARIO
 
 
-def dic_count(text):
-    for char in text:
-        if char in diccionario:
-            diccionario[char] += 1
+def dic_count(lista):
+    charts_dict = {}
+
+    for char in lista:
+        if char in charts_dict:
+            charts_dict[char] += 1
         else:
-            diccionario[char] = 1
+            charts_dict[char] = 1
+
+    return charts_dict
 
 
-dic_count(lista)
-print(diccionario)
-
-# ********** Con una librería *********
-# diccionario2 = Counter(texto.replace(" ", ""))
-# print(diccionario2)
-
-# ********** Parte 3 *********
-lista_tuplas = []
+# 3 - FUNCIÓN PARA OBTENER TUPLAS DE UN DICCIONARIO
 
 
-def dic2tuplas(diccionario):
-    lista = []
-    diccionario_ordenado = sorted(
-        diccionario.items(), key=lambda item: item[1], reverse=True)
-
-    for char, count in diccionario_ordenado:
-        lista.append((char, count))
-
-    return lista
+def ordena_dic(diccionario):
+    return sorted(
+        diccionario.items(),
+        key=lambda item: item[1],
+        reverse=True
+    )
 
 
-lista_tuplas = dic2tuplas(diccionario)
-print(lista_tuplas)
+# 4 - FUNCIÓN PARA DEVOLVER LAS TUPLAS DE MAYOR VALOR
+
+
+def mayores_tuplas(tuplas):
+    mayor_valor = 0
+    respuesta = []
+
+    for char in tuplas:
+
+        if char[1] > mayor_valor:
+            mayor_valor = char[1]
+
+    for char in tuplas:
+
+        if char[1] == mayor_valor:
+            respuesta.append(char)
+
+    return respuesta
+
+# 5 - FUNCIÓN PARA IMPRIMIR MENSAJE CON LISTAS DE LOS VALORES MÁS REPETIDOS
+
+
+def mensaje(mayores):
+    print("Los caracteres que mas se repiten son:")
+    for mayor in mayores:
+        print(f"- {mayor[0].upper()} con {mayor[1]} repeticiones")
+
+
+# 6 - UNA FUNCIÓN PARA LLAMAR A TODAS ;)
+
+
+def busca_caracteres(text):
+    lista = text2list(text)
+    diccionario = dic_count(lista)
+    lista_tuplas = ordena_dic(diccionario)
+    mensaje(mayores_tuplas(lista_tuplas))
+
+
+# EJECUCIÓN FDE FUNCIONALIDADES PASO A PASO
+# lista = text2list(texto)
+# print("Lista sin espacios: ", lista)
+
+# diccionario = dic_count(lista)
+# print("Diccionario de caracteres contados:")
+# pprint(diccionario)
+
+# lista_tuplas = ordena_dic(diccionario)
+# print("Lista de tuplas ordenadas por valor descendente:")
+# pprint(lista_tuplas)
+
+# mayores = mayores_tuplas(lista_tuplas)
+# mensaje(mayores)
+
+
+# EJECUCIÓN FINAL
+busca_caracteres(texto)
