@@ -65,7 +65,7 @@ def mensaje(mayores):
 # 6 - UNA FUNCIÓN PARA LLAMAR A TODAS ;)
 
 
-def busca_caracteres(text):
+def main(text):
     lista = text2list(text)
     diccionario = dic_count(lista)
     lista_tuplas = ordena_dic(diccionario)
@@ -89,4 +89,4 @@ def busca_caracteres(text):
 
 
 # EJECUCIÓN FINAL
-busca_caracteres(texto)
+main(texto)
